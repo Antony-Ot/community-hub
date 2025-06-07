@@ -1,0 +1,16 @@
+
+<h1>Page Visit Report</h1>
+
+<h2>Visits Count by Page</h2>
+<ul>
+    {% for visit in visits %}
+        <li>{{ visit.page }}: {{ visit.count }} visits</li>
+    {% endfor %}
+</ul>
+
+<h2>Visit Times</h2>
+<ul>
+    {% for visit in visit_times %}
+        <li>{{ visit.page }} visited at {{ visit.visit_time }}</li>
+    {% endfor %}
+</ul>

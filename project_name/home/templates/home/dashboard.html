@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Community Hub</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .service {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Community Hub Dashboard</h1>
+        <div class="service">
+            <a href="{% url 'emergency_alerts' %}">Emergency Alerts</a>
+        </div>
+        <div class="service">
+            <a href="{% url 'skill_building' %}">Skill Building</a>
+        </div>
+        <div class="service">
+            <a href="{% url 'cultural_preservation' %}">Cultural Preservation</a>
+        </div>
+        <div class="service">
+            <a href="{% url 'discussion_forums' %}">Discussion Forums</a>
+        </div>
+        <div class="service">
+            <a href="{% url 'resource_directory' %}">Resource Directory</a>
+        </div>
+    </div>
+<a href="{% url 'logout' %}" style="display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #dc3545; color: white; text-decoration: none; border-radius: 4px;">Logout</a>
+
+</body>
+</html>
